@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin Name de John Doe - N-Code</title>
+    <meta name="description" content="">
+
+    <!-- Style Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <!-- Style fontawesome-->
+    <link rel="stylesheet" href="../../assets/css/all.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- Bundle JS for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                    aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-none d-sm-block" href="../../">N-Code</a>
+            </div>
+
+            <form class="form-inline my-2 my-lg-0 mx-lg-auto w-xl-25 position-relative d-lg-none" name="searchForm">
+                <i class="fas fa-search header-search-icon"></i>
+                <input class="form-control mr-sm-2 w-xl-100 header-search-input" type="search" placeholder="Rechercher...">
+            </form>
+
+            <a href="#" class="btn btn-secondary d-lg-none"><i class="fas fa-sign-in-alt"></i></a>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-microchip"></i> Ressources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <span class="dropdown-header"><i class="fas fa-cube"></i> Minecraft</span>
+                            <a href="#plugins" class="dropdown-item">Plugins</a>
+                            <a href="#mods" class="dropdown-item">Mods</a>
+                            <div class="dropdown-divider"></div>
+                            <span class="dropdown-header"><i class="fab fa-discord"></i> Discord</span>
+                            <a class="dropdown-item" href="#bots">Bots</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#devis"><i class="fas fa-file-contract"></i> Demander un devis</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formations"><i class="fas fa-graduation-cap"></i> Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"><i class="fas fa-book-open"></i> Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"><i class="fas fa-user"></i> Portfolio</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0 mx-lg-auto w-xl-25 position-relative d-none d-lg-block" name="searchForm">
+                    <i class="fas fa-search header-search-icon"></i>
+                    <input class="form-control mr-sm-2 w-xl-100 header-search-input" type="search" placeholder="Rechercher...">
+                </form>
+
+                <a href="#" class="btn btn-secondary d-none d-lg-block">Connexion <i class="fas fa-sign-in-alt"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-5 pt-5">
+
+        <div class="container pb-0">
+            <a href="#"><i class="fas fa-arrow-left"></i> Revenir sur la liste des plugins</a>
+        </div>
+
+        <section id="plugin" class="container pt-4 separator">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x300" alt="" class="w-100">
+                    <div class="py-3">
+                        <h2 class="text-center">John Doe <span class="badge badge-warning">VIP</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h1>Plugin Name</h1>
+
+                    <p class="text-muted">Dernière mise à jour: 6 Novembre 2020</p>
+                    <p class="mb-0">Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt text-warning"></i></p>
+                    <p class="text-muted font-italic">250 126 Téléchargements.</p>
+
+                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et tenetur minima quod? Delectus, ipsum! Deserunt saepe pariatur illum veritatis repudiandae, corrupti laudantium reprehenderit sit, tempora ex deleniti id dolorum voluptatum.
+                    Aut laborum dicta, quod vel voluptatum praesentium fugit corporis impedit tempore? Facere nihil sequi quos consectetur velit iste autem quam incidunt quasi quae, et odio corrupti praesentium voluptate recusandae minima.
+                    Nesciunt, earum vel ad eius autem sunt repellat cumque minima praesentium harum enim repudiandae et omnis delectus rerum iste voluptas quisquam doloremque ipsa similique pariatur suscipit maiores? Fugit, eum unde.</p>
+
+                    <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="comments" class="container">
+            <h2>Commentaires</h2>
+            <div class="my-5 jumbotron py-5">
+                <p class="text-muted">Veuillez-vous connecter pour ajouter une note et un commentaire:</p>
+                <a href="#" class="btn btn-secondary">Connexion <i class="fas fa-sign-in-alt"></i></a>
+            </div>
+            <div>
+
+                <div class="row my-5 separator pb-4">
+                    <div class="d-none d-md-block col-md-3 col-lg-1">
+                        <img src="https://via.placeholder.com/50x50" alt="" class="w-100 rounded-circle">
+                    </div>
+                    <div class="col-md-9 col-lg-7">
+                        <h3>Jane Doe</h3>
+                        <p class="mb-0 text-muted">Le 6 Novembre 2020</p>
+                        <p>Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe perspiciatis, est tempora reiciendis vel ad voluptatem expedita possimus ratione ut distinctio, voluptas explicabo iusto, ipsum nam molestias itaque dolores.</p>
+                        <div class="d-flex">
+                            <p class="text-muted"><i class="fas fa-thumbs-up"></i> 2675 j'aime</p>
+                            <span class="mx-3"> | </span>
+                            <p class="text-success"><i class="fas fa-reply"></i> Répondre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 separator pb-4">
+                    <div class="d-none d-md-block col-md-3 col-lg-1">
+                        <img src="https://via.placeholder.com/50x50" alt="" class="w-100 rounded-circle">
+                    </div>
+                    <div class="col-md-9 col-lg-7">
+                        <h3>Jane Doe</h3>
+                        <p class="mb-0 text-muted">Le 6 Novembre 2020</p>
+                        <p>Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe perspiciatis, est tempora reiciendis vel ad voluptatem expedita possimus ratione ut distinctio, voluptas explicabo iusto, ipsum nam molestias itaque dolores.</p>
+                        <div class="d-flex">
+                            <p class="text-muted"><i class="fas fa-thumbs-up"></i> 2675 j'aime</p>
+                            <span class="mx-3"> | </span>
+                            <p class="text-success"><i class="fas fa-reply"></i> Répondre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 separator pb-4">
+                    <div class="d-none d-md-block col-md-3 col-lg-1">
+                        <img src="https://via.placeholder.com/50x50" alt="" class="w-100 rounded-circle">
+                    </div>
+                    <div class="col-md-9 col-lg-7">
+                        <h3>Jane Doe</h3>
+                        <p class="mb-0 text-muted">Le 6 Novembre 2020</p>
+                        <p>Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe perspiciatis, est tempora reiciendis vel ad voluptatem expedita possimus ratione ut distinctio, voluptas explicabo iusto, ipsum nam molestias itaque dolores.</p>
+                        <div class="d-flex">
+                            <p class="text-muted"><i class="fas fa-thumbs-up"></i> 2675 j'aime</p>
+                            <span class="mx-3"> | </span>
+                            <p class="text-success"><i class="fas fa-reply"></i> Répondre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 separator pb-4">
+                    <div class="d-none d-md-block col-md-3 col-lg-1">
+                        <img src="https://via.placeholder.com/50x50" alt="" class="w-100 rounded-circle">
+                    </div>
+                    <div class="col-md-9 col-lg-7">
+                        <h3>Jane Doe</h3>
+                        <p class="mb-0 text-muted">Le 6 Novembre 2020</p>
+                        <p>Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star"></i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe perspiciatis, est tempora reiciendis vel ad voluptatem expedita possimus ratione ut distinctio, voluptas explicabo iusto, ipsum nam molestias itaque dolores.</p>
+                        <div class="d-flex">
+                            <p class="text-muted"><i class="fas fa-thumbs-up"></i> 2675 j'aime</p>
+                            <span class="mx-3"> | </span>
+                            <p class="text-success"><i class="fas fa-reply"></i> Répondre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 separator pb-4">
+                    <div class="d-none d-md-block col-md-3 col-lg-1">
+                        <img src="https://via.placeholder.com/50x50" alt="" class="w-100 rounded-circle">
+                    </div>
+                    <div class="col-md-9 col-lg-7">
+                        <h3>Jane Doe</h3>
+                        <p class="mb-0 text-muted">Le 6 Novembre 2020</p>
+                        <p>Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star"></i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe perspiciatis, est tempora reiciendis vel ad voluptatem expedita possimus ratione ut distinctio, voluptas explicabo iusto, ipsum nam molestias itaque dolores.</p>
+                        <div class="d-flex">
+                            <p class="text-muted"><i class="fas fa-thumbs-up"></i> 2675 j'aime</p>
+                            <span class="mx-3"> | </span>
+                            <p class="text-success"><i class="fas fa-reply"></i> Répondre</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="d-none d-md-block col-md-3 col-lg-1">
+                        <img src="https://via.placeholder.com/50x50" alt="" class="w-100 rounded-circle">
+                    </div>
+                    <div class="col-md-9 col-lg-7">
+                        <h3>Jane Doe</h3>
+                        <p class="mb-0 text-muted">Le 6 Novembre 2020</p>
+                        <p>Note: <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star"></i></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe perspiciatis, est tempora reiciendis vel ad voluptatem expedita possimus ratione ut distinctio, voluptas explicabo iusto, ipsum nam molestias itaque dolores.</p>
+                        <div class="d-flex">
+                            <p class="text-muted"><i class="fas fa-thumbs-up"></i> 2675 j'aime</p>
+                            <span class="mx-3"> | </span>
+                            <p class="text-success"><i class="fas fa-reply"></i> Répondre</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-secondary text-center py-5 font-size-1">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 font-size-2">
+                <i class="fab fa-youtube"></i> <i class="fab fa-discord"></i> <i class="fab fa-twitter"></i>
+            </div>
+            <div class="col-12 col-md-4">
+                <a href="mailto:pro@neutronstars.fr">pro@neutronstars.fr</a>
+            </div>
+            <div class="col-12 col-md-4">
+                &copy; 2020 NeutronStars, Tous droits réservés
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
