@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: url('https://via.placeholder.com/1200x300') center/cover no-repeat;
+    height: 30rem;
+}
+
+.font-size-1{
+    font-size: 1rem;
+}
+
+.font-size-2{
+    font-size: 2rem;
+}
+
+.header-search-icon{
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    color: #444;
+    left: .5rem;
+}
+
+.header-search-input{
+    position: relative;
+    padding-left: 2rem;
+    z-index: 3;
+}
+
+.header-search-input:placeholder-shown{
+    z-index: 1;
+}
+
+.container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.bg-parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+}
+
+.bg-minecraft, .bg-discord, .bg-formations{
+    background-image: url('https://via.placeholder.com/1200x600');
+}
+
+.separator{
+    border-bottom: 1px solid #444;
+}
+
+@media (min-width: 576px)
+{
+    /* font sizing*/
+    .font-size-sm-1{
+        font-size: 1rem;
+    }
+
+    .font-size-sm-2{
+        font-size: 2rem;
+    }
+
+    .font-size-sm-3{
+        font-size: 3rem;
+    }
+
+    .font-size-sm-4{
+        font-size: 4rem;
+    }
+
+    .font-size-sm-4{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .min-width-lg-20r{
+        min-width: 20rem!important;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    /* SIZING */
+    .w-xl-0{
+        width: 0%!important;
+    }
+
+    .w-xl-25{
+        width: 25%!important;
+    }
+
+    .w-xl-50{
+        width: 50%!important;
+    }
+
+    .w-xl-75{
+        width: 75%!important;
+    }
+
+    .w-xl-100{
+        width: 100%!important;
+    }
+}

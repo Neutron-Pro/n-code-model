@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - N-Code</title>
+    <meta name="description" content="">
+
+    <!-- Style Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Style fontawesome-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bundle JS for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">N-Code</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-microchip"></i> Ressources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                            <span class="dropdown-header"><i class="fas fa-cube"></i> Minecraft</span>
+                            <a href="#plugins" class="dropdown-item">Plugins</a>
+                            <a href="#mods" class="dropdown-item">Mods</a>
+                            <div class="dropdown-divider"></div>
+                            <span class="dropdown-header"><i class="fab fa-discord"></i> Discord</span>
+                            <a class="dropdown-item" href="#bots">Bots</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formations"><i class="fas fa-graduation-cap"></i> Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-book-open"></i> Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-user"></i> Portfolio</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mx-lg-auto w-xl-25 position-relative" name="searchForm">
+                    <i class="fas fa-search header-search-icon"></i>
+                    <input class="form-control mr-sm-2 w-xl-100 header-search-input" type="search" placeholder="Rechercher...">
+                </form>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        data-display="static" aria-haspopup="true" aria-expanded="false">
+                        Connexion <i class="fas fa-sign-in-alt"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-lg-right min-width-lg-20r">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de passe</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Mot de passe">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">
+                                        Se souvenir de moi
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Me connecter</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">M'inscrire</a>
+                        <a class="dropdown-item" href="#">Mot de passe oublié ?</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header position-relative d-flex justify-content-center align-items-center">
+            <h1 class="font-size-2 font-size-sm-4 text-uppercase">NeutronStars</h1>
+            <div class="position-absolute align-self-end text-center font-size-1 mt-5">
+                <p>Me rejoindre</p>
+                <div class="font-size-2">
+                    <i class="fab fa-youtube"></i> <i class="fab fa-discord"></i> <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about" class="container">
+            <div class="row">
+                <div class="col-md-6 py-3 py-md-0">
+                    <img src="https://via.placeholder.com/300x300" alt="" class="d-block m-auto mw-100">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">Lorem Ipsum</h2>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque sequi animi fugit cumque debitis nam porro, fugiat rerum dolore deserunt iusto dolorem sapiente aliquid numquam incidunt dignissimos ut quidem!
+                    Exercitationem, reprehenderit? Alias, sunt? Repellendus, dolorum at necessitatibus, dignissimos sit nihil modi odit tempore minus quia enim omnis, reprehenderit expedita quos quis sapiente voluptatum voluptatibus. Aliquid voluptatibus obcaecati nisi cum.
+                    Rem maxime dolore sapiente illum totam corporis, distinctio laborum debitis tempore delectus? Reiciendis magnam exercitationem qui accusantium beatae tempore fuga eaque voluptatem sapiente, voluptate laborum unde itaque neque esse mollitia!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-parallax bg-minecraft d-flex justify-content-center align-items-center h2 text-uppercase">
+            Minecraft
+        </div>
+        <section id="plugins" class="container separator">
+            <h2 class="text-center">Lorem Ipsum</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Plugin Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Plugin Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Plugin Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Plugin Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="text-right mt-5">
+                <a href="#" class="btn btn-secondary">Voir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="mods" class="container">
+            <h2 class="text-center">Lorem Ipsum</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mod Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mod Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mod Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Mod Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="text-right mt-5">
+                <a href="#" class="btn btn-secondary">Voir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="bg-secondary p-3 mt-5">
+                <h3>Demander un devis pour un projet Minecraft</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <form name="minecraftForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Numéro de téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" class="w-100" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="fileMc">Présentation du projet</label>
+                        <input type="file" id="fileMC" class="form-control-file">
+                        <small id="fileHelp" class="form-text text-muted">Envoyer un document texte qui contient le maximum de détails pour établir un devis le plus juste possible.</small>
+                    </div>
+
+                    <button class="btn btn-primary"><i class="fas fa-paper-plane"></i> Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        
+        <div class="bg-parallax bg-discord d-flex justify-content-center align-items-center h2 text-uppercase">
+            Discord
+        </div>
+        <section id="bots" class="container">
+            <h2 class="text-center">Lorem Ipsum</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bot Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bot Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bot Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bot Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="text-right mt-5">
+                <a href="#" class="btn btn-secondary">Voir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+
+            <div class="bg-secondary p-3 mt-5">
+                <h3>Demander un devis pour un projet Discord</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <form name="discordForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Numéro de téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" class="w-100" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="fileMc">Présentation du projet</label>
+                        <input type="file" id="fileMC" class="form-control-file">
+                        <small id="fileHelp" class="form-text text-muted">Envoyer un document texte qui contient le maximum de détails pour établir un devis le plus juste possible.</small>
+                    </div>
+
+                    <button class="btn btn-primary"><i class="fas fa-paper-plane"></i> Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+
+        <div class="bg-parallax bg-formations d-flex justify-content-center align-items-center h2 text-uppercase">
+            Formations
+        </div>
+        <section id="formations" class="container">
+            <h2 class="text-center">Lorem Ipsum</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Formation Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Formation Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Formation Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 py-2">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Formation Name</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, nostrum id.</p>
+                          <a href="#" class="btn btn-primary">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="text-right mt-5">
+                <a href="#" class="btn btn-secondary">Voir plus <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
